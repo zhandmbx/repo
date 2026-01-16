@@ -1,15 +1,10 @@
-/*
- * @Author: zhandmbx zhandmbx@163.com
- * @Date: 2025-09-14 21:41:41
- * @LastEditors: zhandmbx zhandmbx@163.com
- * @LastEditTime: 2025-09-14 21:41:51
- * @FilePath: \xind-code-mother-frontend\src\stores\loginUser.ts
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { getLoginUser } from '@/api/userController.ts'
 
+/**
+ * 登录用户信息
+ */
 export const useLoginUserStore = defineStore('loginUser', () => {
   // 默认值
   const loginUser = ref<API.LoginUserVO>({
@@ -23,10 +18,11 @@ export const useLoginUserStore = defineStore('loginUser', () => {
       loginUser.value = res.data.data
     }
   }
+
   // 更新登录用户信息
   function setLoginUser(newLoginUser: any) {
     loginUser.value = newLoginUser
   }
 
-  return { loginUser, setLoginUser, fetchLoginUser }
+  return { loginUser, fetchLoginUser, setLoginUser }
 })

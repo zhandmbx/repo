@@ -1,6 +1,8 @@
 package org.example.xindcodespring.ai;
 
+import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
+import dev.langchain4j.service.UserMessage;
 import org.example.xindcodespring.ai.model.HtmlCodeResult;
 import org.example.xindcodespring.ai.model.MultiFileCodeResult;
 import reactor.core.publisher.Flux;
@@ -18,8 +20,15 @@ public interface AiCodeGeneratorService {
      * @return 生成的代码结果
      */
     @SystemMessage(fromResource = "prompt/codegen-html-system-prompt.txt")
-    HtmlCodeResult generateHtmlCode(String userMessage);
+    HtmlCodeResult generateHtmlCode( String userMessage);
 
+    /**
+     *
+     * @param memoryId
+     * @param userMessage
+     * @return
+     */
+    HtmlCodeResult generateHtmlCode(@MemoryId int memoryId, @UserMessage String userMessage);
     /**
      * 生成多文件代码
      *
