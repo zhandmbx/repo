@@ -28,6 +28,7 @@ public interface AiCodeGeneratorService {
      * @param userMessage
      * @return
      */
+    @SystemMessage(fromResource = "prompt/codegen-html-system-prompt.txt")
     HtmlCodeResult generateHtmlCode(@MemoryId int memoryId, @UserMessage String userMessage);
     /**
      * 生成多文件代码

@@ -41,16 +41,6 @@ public class AiCodeGeneratorServiceFactory {
                 .build();
     }
 
-    /**
-     * 快速创建AI代码生成器服务
-     * @return
-     */
-    @Bean
-    public AiCodeGeneratorService aiCodeGeneratorServicec() {
-        return AiServices.builder(AiCodeGeneratorService.class)
-                .chatModel(chatModel)
-                .streamingChatModel(streamingChatModel)
-                .build();
-    }
+
 }
 

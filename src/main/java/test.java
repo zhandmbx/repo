@@ -13,7 +13,7 @@ public class test {
 
         set.add("0");
         set.add("1");
-        set.add("0");
+        set.add("是的是的");
         set.add("1");
         List<String> list = new ArrayList<>(set);
         System.out.println("test.main"+list );
