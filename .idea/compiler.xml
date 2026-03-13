@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xind.rpc.core" />
+        <module name="xind.rpc.easy" />
+        <module name="example-provider" />
+        <module name="example-consumer" />
+        <module name="example-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.xind.rpc.easy" target="1.8" />
+      <module name="xind-rpc-core" target="1.8" />
+      <module name="xind.prc.easy" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

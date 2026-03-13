@@ -1,0 +1,17 @@
+org\example\rpc\xind\serializer\Serializer.class
+org\example\rpc\xind\proxy\ServiceProxyFactory.class
+org\example\rpc\xind\utils\ConfigUtils.class
+org\example\rpc\xind\model\RpcRequest.class
+org\example\rpc\xind\model\RpcResponse$RpcResponseBuilder.class
+org\example\rpc\xind\serializer\JdkSerializer.class
+org\example\rpc\xind\register\LocalRegistry.class
+org\example\rpc\xind\model\RpcRequest$RpcRequestBuilder.class
+org\example\rpc\xind\proxy\ServiceProxy.class
+org\example\rpc\xind\server\HttpServerHandler.class
+org\example\rpc\xind\config\RpcConfig.class
+org\example\rpc\xind\model\RpcResponse.class
+org\example\rpc\xind\RpcApplication.class
+org\example\rpc\xind\server\VertxHttpServer.class
+org\example\rpc\xind\server\HttpServer.class
+org\example\App.class
+org\example\rpc\xind\constant\RpcConstant.class
